@@ -1,0 +1,27 @@
+{% extends 'web_lib/main.html' %}
+
+{% block content %}
+    <h1>Books</h1>
+    <div>
+        {% if books %}
+            {% for book in books %}
+                <p>title: {{book.title}}</p>
+                <p>description: {{book.description}}</p>
+                <p>date: {{book.published|date:'DATETIME_FORMAT'}}</p>
+                <!--                                                                        
+                    date:'DATETIME_FORMAT'
+                    date:'DATE_FORMAT'
+                    date:'d. m.'
+                    date:'d. m. y.'
+                -->
+            {% endfor %}
+        {% else %}
+            <p>No books</p>
+        {% endif %}
+    </div>
+{% endblock %}
+
+<!--
+  Привет!
+  Я комментарий в HTML-коде, меня не видно на странице
+-->
