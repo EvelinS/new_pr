@@ -14,6 +14,15 @@
         Lorem ipsum is placeholder text commonly used in the graphic, 
         print, and publishing industries for previewing layouts and visual mockups.
     </p>
+     <!-- 
+        {% url 'about' as about_url %}
+        <a href={{about_url}}>Show about</a>
+        or
+        <a href={% url 'about' %}>Show about</a>
+     -->
+    
+    <a href={% url 'about' %}>Show about</a>
+
     {% block content %}
 
     {% endblock %}
