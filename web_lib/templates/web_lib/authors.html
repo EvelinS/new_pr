@@ -1,8 +1,8 @@
 {% extends 'web_lib/main.html' %}
 
 {% block content %}
-    <h1>Authors</h1>
-    <div>
+    <div class="container">
+        <h1>Authors</h1>
         {% if authors %}
             {% for author in authors %}
                 <p>{{author.name}}</p>
